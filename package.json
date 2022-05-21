@@ -1,0 +1,23 @@
+{
+  "name": "odin-restaurant",
+  "version": "1.0.0",
+  "description": "My take on the restaurant project for The Odin Project javascript course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goik28/Odin-Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goik28/Odin-Restaurant/issues"
+  },
+  "homepage": "https://github.com/Goik28/Odin-Restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
