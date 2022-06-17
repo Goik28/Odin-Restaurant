@@ -1,8 +1,9 @@
+import './header.css'
 export default createHeader;
 
-const text1 = "About";
-const text2 = "Menu";
-const text3 = "Contact";
+const text1 = "ABOUT";
+const text2 = "MENU";
+const text3 = "CONTACT";
 
 function createHeader() {
     const header = document.createElement('header');
@@ -16,16 +17,12 @@ function createHeader() {
     menu.id = "menu";
     contact.id = "contact";
 
+    about.className = "navigation";
+    menu.className = "navigation";
+    contact.className = "navigation";
+
     header.appendChild(about);
     header.appendChild(menu);
     header.appendChild(contact);
-    headerStyle(header);
     return header;
-}
-
-function headerStyle(header) {
-    header.style.height = "25px";
-    header.style.width = "800px";
-    header.style.display = "flex";
-    header.style.justifyContent = "space-between";
 }

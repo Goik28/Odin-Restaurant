@@ -1,3 +1,4 @@
+import './footer.css';
 export default createFooter;
 
 const text = "This is not a real restaurant -- Created by Goik for the Restaurant project on The Odin Project course";
@@ -7,13 +8,5 @@ function createFooter() {
     const description = document.createElement('div');
     description.textContent = text;
     footer.appendChild(description);
-    footerStyle(footer);
     return footer;
-}
-
-function footerStyle(footer) {    
-    footer.style.height="25px";
-    footer.style.display="flex";
-    footer.style.justifyContent="center";
-    footer.style.marginTop = "25px"
 }

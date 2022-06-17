@@ -1,8 +1,7 @@
-import imgFlavor1 from './Assets/pizza-calabresa.jpg';
-import imgFlavor2 from './Assets/pizza-frango.jpg';
-import imgFlavor3 from './Assets/pizza-mineira.jpg';
-import imgFlavor4 from './Assets/pizza-strogonoff.jpg';
-import imgFlavor5 from './Assets/pizza-sushi.jpg';
+import './content.css';
+import imgFlavor1 from '../Assets/pizza-calabresa.jpg';
+import imgFlavor2 from '../Assets/pizza-frango.jpg';
+import imgFlavor3 from '../Assets/pizza-mineira.jpg';
 export default createMenu;
 
 const text1 = "Goik's Restaurant menu";
@@ -65,56 +64,18 @@ function createMenu() {
     imgPizza3.style.width = "250px";
     pizza3.appendChild(imgPizza3);
 
-    //pizza strogonoff
-    const pizza4 = document.createElement('div');
-    pizzaStyle(pizza4);
-    const descr4 = document.createElement('h4');
-    descr4.textContent = flavor4;
-    pizza4.appendChild(descr4);
-    const descr41 = document.createElement('p');
-    descr41.textContent = ingred4;
-    pizza4.appendChild(descr41);
-    const imgPizza4 = new Image();
-    imgPizza4.src = imgFlavor4;
-    imgPizza4.style.width = "250px";
-    pizza4.appendChild(imgPizza4);
-
-    //pizza sushi
-    const pizza5 = document.createElement('div');
-    pizzaStyle(pizza5);
-    const descr5 = document.createElement('h4');
-    descr5.textContent = flavor5;
-    pizza5.appendChild(descr5);
-    const descr51 = document.createElement('p');
-    descr51.textContent = ingred5;
-    pizza5.appendChild(descr51);
-    const imgPizza5 = new Image();
-    imgPizza5.src = imgFlavor5;
-    imgPizza5.style.width = "250px";
-    pizza5.appendChild(imgPizza5);
-
     menu.appendChild(title);
     menu.appendChild(pizza1);
     menu.appendChild(pizza2);
     menu.appendChild(pizza3);
-    menu.appendChild(pizza4);
-    menu.appendChild(pizza5);
-    menuStyle(menu);
     return menu;
-}
-
-function menuStyle(menu) {
-    menu.style.flex = "1 1 auto";
-    menu.style.display = "flex";
-    menu.style.flexDirection = "column";
-    menu.style.justifyContent = "space-around";
-    menu.style.alignItems = "center";
-    menu.style.textAlign = "justify";
 }
 
 function pizzaStyle(pizza){
 pizza.style.width = "600px";
 pizza.style.border = "solid black 2px";
+pizza.style.borderLeftWidth = "0px";
+pizza.style.borderRightWidth = "0px";
 pizza.style.paddingLeft = "10px";
 pizza.style.paddingRight = "10px";
 pizza.style.paddingBottom = "10px";

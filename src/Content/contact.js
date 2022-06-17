@@ -1,3 +1,4 @@
+import './content.css';
 export default createContact;
 
 const text1 = "Contact Goik's Restaurant!";
@@ -29,15 +30,5 @@ function createContact() {
     contact.appendChild(groupMap);
     contact.appendChild(flair3);
     contact.appendChild(flair4);
-    contactStyle(contact);
     return contact;
-}
-
-function contactStyle(contact) {
-    contact.style.flex = "1 1 auto";
-    contact.style.display = "flex";
-    contact.style.flexDirection = "column";
-    contact.style.justifyContent = "space-around";
-    contact.style.alignItems = "center";
-    contact.style.textAlign = "justify";
 }

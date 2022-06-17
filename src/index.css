@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFEDD5;
+    background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(0, 0%, 100%, 0.349) 5px, hsla(0, 0%, 100%, 0.411) 10px,
+            hsla(5, 56%, 76%, 0) 10px, hsla(5, 100%, 85%, 0) 35px, hsla(5, 37%, 68%, 0.5) 35px, hsla(4, 36%, 70%, 0.5) 40px,
+            hsla(0, 34%, 77%, 0.5) 40px, hsla(0, 40%, 75%, 0.5) 50px, hsla(0, 100%, 91%, 0) 50px, hsla(0, 100%, 94%, 0) 60px,
+            hsla(5, 35%, 68%, 0.315) 60px, hsla(5, 27%, 67%, 0.267) 70px, hsla(35, 80%, 73%, 0.329) 70px, hsla(35, 100%, 77%, 0.349) 80px,
+            hsla(35, 100%, 78%, 0.068) 80px, hsla(35, 100%, 78%, 0.075) 90px, hsla(5, 33%, 79%, 0.267) 90px, hsla(5, 21%, 76%, 0.322) 110px,
+            hsla(5, 27%, 73%, 0) 110px, hsla(6, 21%, 82%, 0) 140px, hsla(0, 0%, 63%, 0.5) 140px, hsla(0, 3%, 87%, 0.301) 160px),
+        repeating-linear-gradient(135deg, transparent 5px, hsla(0, 0%, 100%, 0.349) 5px, hsla(0, 0%, 100%, 0.411) 10px,
+            hsla(5, 56%, 76%, 0) 10px, hsla(5, 100%, 85%, 0) 35px, hsla(5, 37%, 68%, 0.5) 35px, hsla(4, 36%, 70%, 0.5) 40px,
+            hsla(0, 34%, 77%, 0.5) 40px, hsla(0, 40%, 75%, 0.5) 50px, hsla(0, 100%, 91%, 0) 50px, hsla(0, 100%, 94%, 0) 60px,
+            hsla(5, 35%, 68%, 0.315) 60px, hsla(5, 27%, 67%, 0.267) 70px, hsla(35, 80%, 73%, 0.329) 70px, hsla(35, 100%, 77%, 0.349) 80px,
+            hsla(35, 100%, 78%, 0.068) 80px, hsla(35, 100%, 78%, 0.075) 90px, hsla(5, 33%, 79%, 0.267) 90px, hsla(5, 21%, 76%, 0.322) 110px,
+            hsla(5, 27%, 73%, 0) 110px, hsla(6, 21%, 82%, 0) 140px, hsla(0, 0%, 63%, 0.5) 140px, hsla(0, 3%, 87%, 0.301) 160px);
+}

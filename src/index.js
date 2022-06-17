@@ -1,11 +1,11 @@
-import createHeader from "./header";
-import createAbout from "./about";
-import createMenu from "./menu";
-import createContact from "./contact";
-import createFooter from "./footer";
+import './index.css';
+import createHeader from "./Header/header";
+import createAbout from "./Content/about";
+import createMenu from "./Content/menu";
+import createContact from "./Content/contact";
+import createFooter from "./Footer/footer";
 
 const content = document.body;
-bodyStyle(content);
 content.appendChild(createHeader());
 content.appendChild(createAbout());
 content.appendChild(createFooter());
@@ -27,13 +27,3 @@ menu.addEventListener("click", () => {
 contact.addEventListener("click", () => {
     content.replaceChild(mainContact, document.getElementsByTagName("main")[0]);
 });
-
-function bodyStyle(content) {
-    content.style.margin = "0px";
-    content.style.padding = "0px";
-    content.style.height = "100vh";
-    content.style.display = "flex";
-    content.style.flexDirection = "column";
-    content.style.justifyContent = "space-between";
-    content.style.alignItems = "center";
-}

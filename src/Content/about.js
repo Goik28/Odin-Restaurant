@@ -1,4 +1,5 @@
-import aboutPizza from './Assets/about-pizza.jpg';
+import './content.css';
+import aboutPizza from '../Assets/about-pizza.jpg';
 export default createAbout;
 
 const text1 = "Welcome to Goik's Restaurant";
@@ -37,15 +38,5 @@ function createAbout() {
     about.appendChild(flair3);
     about.appendChild(flair4);
     about.appendChild(flair5);
-    aboutStyle(about);
     return about;
-}
-
-function aboutStyle(about) {
-    about.style.flex = "1 1 auto";
-    about.style.display = "flex";
-    about.style.flexDirection = "column";
-    about.style.justifyContent = "space-around";
-    about.style.alignItems = "center";
-    about.style.textAlign = "justify";
 }
