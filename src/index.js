@@ -1,11 +1,13 @@
 import createHeader from "./header";
 import createMain from "./main";
+import createMenu from "./menu";
 import createFooter from "./footer";
 
 const content = document.body;
 bodyStyle(content);
 content.appendChild(createHeader());
-content.appendChild(createMain());
+//content.appendChild(createMain());
+content.appendChild(createMenu());
 content.appendChild(createFooter());
 
 
