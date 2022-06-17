@@ -15,4 +15,5 @@ function footerStyle(footer) {
     footer.style.height="25px";
     footer.style.display="flex";
     footer.style.justifyContent="center";
+    footer.style.marginTop = "25px"
 }

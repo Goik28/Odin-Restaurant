@@ -12,6 +12,9 @@ function createHeader() {
     menu.textContent = text2;
     const contact = document.createElement('div');
     contact.textContent = text3;
+    about.id = "about";
+    menu.id = "menu";
+    contact.id = "contact";
 
     header.appendChild(about);
     header.appendChild(menu);

@@ -1,5 +1,5 @@
-import mainPizza from './Assets/main_pizza.jpg';
-export default createMain;
+import aboutPizza from './Assets/about-pizza.jpg';
+export default createAbout;
 
 const text1 = "Welcome to Goik's Restaurant";
 const text2 = "We are a brazilian pizzeria!!"
@@ -9,8 +9,8 @@ const text5 = "Every pizza is made by Tonhão, our amazing pizzaiolo! His fairy'
 const text6 = `Photo by <a href="https://unsplash.com/es/@iavnt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Torres</a>
  on <a href="https://unsplash.com/s/photos/pizza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`
 
-function createMain() {
-    const main = document.createElement('main');
+function createAbout() {
+    const about = document.createElement('main');
     const title = document.createElement('h1');
     title.textContent = text1;
     const flair1 = document.createElement('h2');
@@ -23,7 +23,7 @@ function createMain() {
     flair4.textContent = text5;
     const flair5 = document.createElement('div');
     const img = new Image();
-    img.src = mainPizza;
+    img.src = aboutPizza;
     img.style.width = "600px"
     flair5.appendChild(img);
     const credit = document.createElement('div');
@@ -31,21 +31,21 @@ function createMain() {
     credit.style.textAlign = "center";    
     flair5.appendChild(credit);
   
-    main.appendChild(title);
-    main.appendChild(flair1);
-    main.appendChild(flair2);
-    main.appendChild(flair3);
-    main.appendChild(flair4);
-    main.appendChild(flair5);
-    mainStyle(main);
-    return main;
+    about.appendChild(title);
+    about.appendChild(flair1);
+    about.appendChild(flair2);
+    about.appendChild(flair3);
+    about.appendChild(flair4);
+    about.appendChild(flair5);
+    aboutStyle(about);
+    return about;
 }
 
-function mainStyle(main) {
-    main.style.flex = "1 1 auto";
-    main.style.display = "flex";
-    main.style.flexDirection = "column";
-    main.style.justifyContent = "space-around";
-    main.style.alignItems = "center";
-    main.style.textAlign = "justify";
+function aboutStyle(about) {
+    about.style.flex = "1 1 auto";
+    about.style.display = "flex";
+    about.style.flexDirection = "column";
+    about.style.justifyContent = "space-around";
+    about.style.alignItems = "center";
+    about.style.textAlign = "justify";
 }

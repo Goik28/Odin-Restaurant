@@ -25,7 +25,7 @@ function createMenu() {
 
     //pizza calabresa
     const pizza1 = document.createElement('div');
-    pizza1.style.width = "600px"
+    pizzaStyle(pizza1);
     const descr1 = document.createElement('h4');
     descr1.textContent = flavor1;
     pizza1.appendChild(descr1);
@@ -39,7 +39,7 @@ function createMenu() {
 
     //pizza frango
     const pizza2 = document.createElement('div');
-    pizza2.style.width = "600px"
+    pizzaStyle(pizza2);
     const descr2 = document.createElement('h4');
     descr2.textContent = flavor2;
     pizza2.appendChild(descr2);
@@ -53,7 +53,7 @@ function createMenu() {
 
     //pizza mineira
     const pizza3 = document.createElement('div');
-    pizza3.style.width = "600px"
+    pizzaStyle(pizza3);
     const descr3 = document.createElement('h4');
     descr3.textContent = flavor3;
     pizza3.appendChild(descr3);
@@ -67,7 +67,7 @@ function createMenu() {
 
     //pizza strogonoff
     const pizza4 = document.createElement('div');
-    pizza4.style.width = "600px"
+    pizzaStyle(pizza4);
     const descr4 = document.createElement('h4');
     descr4.textContent = flavor4;
     pizza4.appendChild(descr4);
@@ -81,7 +81,7 @@ function createMenu() {
 
     //pizza sushi
     const pizza5 = document.createElement('div');
-    pizza5.style.width = "600px"
+    pizzaStyle(pizza5);
     const descr5 = document.createElement('h4');
     descr5.textContent = flavor5;
     pizza5.appendChild(descr5);
@@ -99,15 +99,25 @@ function createMenu() {
     menu.appendChild(pizza3);
     menu.appendChild(pizza4);
     menu.appendChild(pizza5);
-    mainStyle(menu);
+    menuStyle(menu);
     return menu;
 }
 
-function mainStyle(menu) {
+function menuStyle(menu) {
     menu.style.flex = "1 1 auto";
     menu.style.display = "flex";
     menu.style.flexDirection = "column";
     menu.style.justifyContent = "space-around";
     menu.style.alignItems = "center";
     menu.style.textAlign = "justify";
+}
+
+function pizzaStyle(pizza){
+pizza.style.width = "600px";
+pizza.style.border = "solid black 2px";
+pizza.style.paddingLeft = "10px";
+pizza.style.paddingRight = "10px";
+pizza.style.paddingBottom = "10px";
+pizza.style.textAlign = "center";
+pizza.style.marginTop = "-2px";
 }
